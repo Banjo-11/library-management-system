@@ -1,5 +1,7 @@
 import sqlite3
 
+def get_connection():
+    return sqlite3.connect("library.db")
 
 def create_database():
     connection = sqlite3.connect("library.db")
